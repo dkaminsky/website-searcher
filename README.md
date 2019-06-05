@@ -15,8 +15,8 @@ queue* for consumption by the **searcher** thread.
 ## Build
 This project uses *gradle* - see <http://www.gradle.org> for more information.
 
-To clean: `./gradlew clean`
-To build: `./gradlew build`
+* To clean: `./gradlew clean`
+* To build: `./gradlew build`
 
 ## Running
 This project is written using Java 8 and compiles to a Java 8 compatible jar file.

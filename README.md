@@ -21,9 +21,6 @@ This project uses *gradle* - see <http://www.gradle.org> for more information.
 ## Running
 This project is written using Java 8 and provides a Java 8 compatible jar file.
 
-The main method of this implementation reads its input from the provided `urls.txt` file and produces a `results.txt`
-file in the same directory.
-
 To run (where *project_dir* is the root of the project as checked out from git):
 ```
 cd project_dir/dist
@@ -31,9 +28,11 @@ java -jar website-searcher.jar
 ```
 This assumes you have Java installed and available on your path.
 
-The main method of this application searches the `urls.txt` file in the working
-directory and for each URL, adds it to the `results.txt` if it contains the word
-"and" anywhere in its content.
+The main method of this application spawns a `WebsiteSearcher` that parses the
+`urls.txt` file in the working directory and writes results to the `results.txt`
+in the same directory. Each `WebsiteSearcherWorker` produces output for the
+searcher thread to consume if the retrieved URL contains the word "and" anywhere
+in its content.
 
 ### Caveats
 * Error handling is fairly minimal since the product specification does not give much detail on how errors ought to

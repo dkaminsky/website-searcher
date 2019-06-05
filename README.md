@@ -13,7 +13,7 @@ expression match logic against the retrieved content. If any of the content matc
 queue* for consumption by the **searcher** thread.
 
 ## Build
-This project uses *gradle* - for more information see <http://www.gradle.org> for more information.
+This project uses *gradle* - see <http://www.gradle.org> for more information.
 
 To clean: `./gradlew clean`
 To build: `./gradlew build`
@@ -26,9 +26,8 @@ file in the same directory.
 
 To run (where *project_dir* is the root of the project as checked out from git:
 ```
-cd project_dir
-./gradlew build
-java -jar ./dist/website-searcher.jar
+cd project_dir/dist
+java -jar website-searcher.jar
 ```
 This assumes you have Java installed and available on your path.
 
